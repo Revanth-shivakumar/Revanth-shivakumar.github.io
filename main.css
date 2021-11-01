@@ -1,0 +1,231 @@
+h1,h2,h3,h4,h5,p,label{
+    font-family: Work Sans,sans-serif;
+}
+.outer-box{
+   height:100vh;
+   margin:0px;
+   width:100vw;
+   background-color: darkblue;
+   text-align: center;
+   overflow-y: scroll;
+   overflow-x: hidden;
+
+}
+.heading{
+  font-family: Work Sans,sans-serif;
+  color: rgb(255, 255, 255);
+  position: relative;
+  top: 5%;
+  transform: scale(1);
+  transition: transform 200ms ease-in-out;
+
+
+}
+.heading:hover{
+    transform: scale(1.5);
+    transition: transform 200ms ease-in-out;
+
+}
+.inner-box{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    height: 100%;
+    width: 80%;
+    position: relative;
+    top: 10%;
+    left: 10%;
+    flex-wrap: wrap;
+    
+}
+.section-1{
+   background-color:darkblue;
+   height: 50%;
+   width:30%;
+   position: relative;
+   top: 5%;
+   min-width:250px;
+   /* border: 1px solid black; */
+}
+.section-2{
+    background-color:whitesmoke;
+    height: 60%;
+    width:30%;
+    position: relative;
+    top: 5%;
+    padding: 0px;
+    min-width:250px;
+
+}
+.active{
+    font-weight: bold;
+}
+.list-name:hover{
+ cursor: pointer;
+}
+.task-list{
+    position: relative;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+
+
+}
+.task-list li{
+    margin-top: 5%;
+    color: beige;
+    font-family:Work Sans,sans-serif;
+}
+.new-list{
+      height:auto;
+      width:100%;
+      margin-top: 20%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+}
+.header-box{
+    background-color:lightgrey;
+    height:20%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    flex-wrap: wrap;
+
+}
+.to-do-content{
+    height:80%;
+    background-color: white;
+    overflow-y:scroll;
+    overflow-x: hidden;
+}
+.list-btn{
+    font-weight:900;
+    color: white;
+    background-color:darkblue;
+    outline: none;
+    border:2px solid darkblue;
+    font-size: 130%;
+    transform: scale(1);
+    transition: transform 200ms ease-in-out;
+}
+.list-btn:hover{
+    transform: scale(2);
+    transition: transform 200ms ease-in-out;
+}
+.list-new{
+    border: none;
+    background-color:darkblue;
+    border-bottom:2px solid white;
+    color: white;
+    outline: none;
+    
+
+}
+.list-new::placeholder{
+    color:white;
+    font-family:Work Sans,sans-serif;
+}
+.All-tasks{
+    position: relative;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    padding-top:5%;
+    padding-bottom:5%;
+    height:70%;
+    padding-left:5%;
+    padding-right:5%;
+}
+.task{
+     display: flex;
+     flex-direction: row;
+     justify-content:flex-start;
+     border-bottom:2px solid gray;
+
+}
+.to-do-new{
+    color:black;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    
+
+
+}
+.to-do-new::placeholder{
+    color:black;
+    font-family:Work Sans,sans-serif;
+
+}
+.to-do-btn{
+    border:none;
+    font-weight:900;
+    font-size: 130%;
+    transform: scale(1);
+    transition: transform 200ms ease-in-out; 
+    background-color:white;
+}
+.to-do-btn:hover{
+    transform: scale(2);
+    transition: transform 200ms ease-in-out;
+
+}
+.tool-checkbox{
+    transform: scale(1);
+    transition: transform 200ms ease-in-out; 
+
+}
+.task:hover .tool-checkbox{
+    transform: scale(2);
+    transition: transform 200ms ease-in-out;
+}
+.tool-checkbox:checked+label.strikethough{
+    text-decoration:line-through;
+}
+.others{
+    position: relative;
+    top: 5%;
+    left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.delete-btn{
+    background-color:white;
+    border:none;
+    font-family:Work Sans,sans-serif;
+    transform: scale(1);
+    transition: transform 200ms ease-in-out;
+
+}
+.clear-btn{
+    background-color:white;
+    border:none;
+    font-family:Work Sans,sans-serif;
+    position: relative;
+    right: 10%;
+    transform: scale(1);
+    transition: transform 200ms ease-in-out;
+}
+.delete-btn:hover{
+    transform: scale(1.1);
+    transition: transform 200ms ease-in-out;
+    
+}
+.clear-btn:hover{
+    transform: scale(1.3);
+    transition: transform 200ms ease-in-out;
+}
+#task-clear{
+    background-color:darkblue;
+    color: white;
+    position: relative;
+    left: 10%;
+
+}
