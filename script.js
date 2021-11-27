@@ -66,11 +66,7 @@ function showTasks(selectedList){
 
     })
 }
-function showTaskCount(selectedList) {
-    const inCompleteTaskcount=selectedList.tasks.filter(task=>!task.complete).length
-    const suffixString=inCompleteTaskcount===1?"task":"tasks" 
-    listCount.innerText= `${inCompleteTaskcount} ${suffixString} remaining`    
-}   
+
 
 
 
@@ -122,6 +118,11 @@ provideTasks(selectedList)
 
 
 })
+function showTaskCount(selectedList) {
+    const inCompleteTaskcount=selectedList.tasks.filter(task=>!task.complete).length
+    const suffixString=inCompleteTaskcount===1?"task":"tasks" 
+    listCount.innerText= `${inCompleteTaskcount} ${suffixString} remaining`    
+}   
 newTaskForm.addEventListener('submit',e=>{
     // e.preventDefault()//prevents empty submissionn
     const taskName=newTaskInput.value
@@ -165,11 +166,12 @@ function clearELement(element){
 
  
 }
-provideList() 
+ 
 clearCompleted.addEventListener('click',e=>{
     const selectedList=lists.find(list=>list.id===selectedlistid)
     selectedList.tasks=selectedList.tasks.filter(task=>!task.complete)
     save_and_display()
 })
+provideList()
 
 
